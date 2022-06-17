@@ -1,0 +1,31 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "aws lambda node.js template",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsonlee/aws-lambda-nodejs-template.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda"
+  ],
+  "author": "johnsonlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnsonlee/aws-lambda-nodejs-template/issues"
+  },
+  "homepage": "https://github.com/johnsonlee/aws-lambda-nodejs-template#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
